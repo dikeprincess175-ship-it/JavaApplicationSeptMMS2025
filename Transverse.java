@@ -12,7 +12,7 @@ public class Transverse{
 		
 			}
 		}
-		System.out.printf("The count of even numbers is %d%n",totalEven);
+		System.out.printf("The count of even numbers is %d%n",totalEven);n
 	}
 	
 }
