@@ -2,7 +2,6 @@ package chapter8;
 
 public class DateTest {
     public static void main(String[] args) {
-        // --- Case A: Incrementing into the next month ---
         System.out.println("=== Case A: Loop Testing Month Rollover ===");
         Date date1 = new Date(10, 29, 2026); // Oct 29, 2026
         
@@ -14,7 +13,6 @@ public class DateTest {
 
         System.out.println();
 
-        // --- Case B: Incrementing into the next year ---
         System.out.println("=== Case B: Loop Testing Year Rollover ===");
         Date date2 = new Date(12, 29, 2026); // Dec 29, 2026
         
@@ -26,7 +24,6 @@ public class DateTest {
 
         System.out.println();
 
-        // --- Validation Test: Invalid Year ---
         System.out.println("=== Testing Year Error Checking ===");
         try {
             Date invalidDate = new Date(5, 15, -2026);

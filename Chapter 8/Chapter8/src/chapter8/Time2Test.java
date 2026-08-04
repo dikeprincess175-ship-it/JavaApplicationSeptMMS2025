@@ -2,21 +2,18 @@ package chapter8;
 
 public class Time2Test {
     public static void main(String[] args) {
-        // --- Case A: Incrementing into the next minute ---
         System.out.println("=== Case A: Incrementing into the next minute ===");
         Time2 t1 = new Time2(6, 29, 59); // 06:29:59 AM
         System.out.printf("Before tick:       %s  (%s)%n", t1.toUniversalString(), t1.toString());
         t1.tick();
         System.out.printf("After tick:        %s  (%s)%n%n", t1.toUniversalString(), t1.toString());
 
-        // --- Case B: Incrementing into the next hour ---
         System.out.println("=== Case B: Incrementing into the next hour ===");
         Time2 t2 = new Time2(9, 59, 59); // 09:59:59 AM
         System.out.printf("Before tick:       %s  (%s)%n", t2.toUniversalString(), t2.toString());
         t2.tick();
         System.out.printf("After tick:        %s  (%s)%n%n", t2.toUniversalString(), t2.toString());
 
-        // --- Case C: Incrementing into the next day (Midnight rollover) ---
         System.out.println("=== Case C: Incrementing into the next day ===");
         Time2 t3 = new Time2(23, 59, 59); // 11:59:59 PM
         System.out.printf("Before tick:       %s  (%s)%n", t3.toUniversalString(), t3.toString());

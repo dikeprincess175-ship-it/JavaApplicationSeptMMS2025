@@ -7,7 +7,6 @@ public class TicTacToe {
     private final CellState[][] board;
     private CellState currentPlayer;
 
-    // Constructor initializes 3x3 board to EMPTY and sets Player X to start
     public TicTacToe() {
         board = new CellState[3][3];
         for (int r = 0; r < 3; r++) {
@@ -18,7 +17,6 @@ public class TicTacToe {
         currentPlayer = CellState.X;
     }
 
-    // Play loop for two human players
     public void play() {
         Scanner scanner = new Scanner(System.in);
         boolean gameEnded = false;
@@ -49,7 +47,6 @@ public class TicTacToe {
         }
     }
 
-    // Attempt to make a move at (row, col)
     private boolean makeMove(int row, int col) {
         if (board[row][col] == CellState.EMPTY) {
             board[row][col] = currentPlayer;
@@ -58,7 +55,6 @@ public class TicTacToe {
         return false;
     }
 
-    // Prompt user for valid integer (0-2)
     private int getValidCoordinate(Scanner scanner, String prompt) {
         int val = -1;
         while (val < 0 || val > 2) {
