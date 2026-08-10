@@ -9,7 +9,7 @@ public class Teacher extends Person {
         return department;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(String department) {  
         this.department = department;
     }
 
