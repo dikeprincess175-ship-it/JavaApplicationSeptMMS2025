@@ -1,4 +1,3 @@
-
 package hospital.models;
 
 import java.time.LocalDate;
@@ -15,6 +14,10 @@ public class MedicationDispensing{
     private String notes;
     
     public MedicationDispensing(){
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() {

@@ -1,10 +1,9 @@
-
 package hospital.models;
 
 import java.time.LocalDate;
 
-
 public class Admission {
+
     private int id;
     private Patient patient;
     private Bed bed;
@@ -13,9 +12,13 @@ public class Admission {
     private String reason;
     private String status;
 
-    public Admission(){
+    public Admission() {
     }
-    
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
@@ -67,6 +70,5 @@ public class Admission {
     public void setStatus(String status) {
         this.status = status;
     }
-    
-    
+
 }

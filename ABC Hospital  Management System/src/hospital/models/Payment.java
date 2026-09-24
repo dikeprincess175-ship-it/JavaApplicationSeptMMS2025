@@ -13,6 +13,10 @@ public class Payment {
     public Payment(){
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

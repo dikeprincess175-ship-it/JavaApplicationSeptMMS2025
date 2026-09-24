@@ -1,19 +1,17 @@
 package hospital.models;
-
 public class User {
-
     private int id;
     private String username;
     private String passwordHash;
-    private StaffRole role;
-    private Staff staff;
-    private boolean active;
+    private String role;
+    private String staff;
+    private Boolean active;
     
-    public User(){
+    public User(){ 
+        
     }
 
-    public User(int id, String username, String passwordHash, StaffRole role, Staff staff, boolean active) {
-        this.id = id;
+    public User(String username, String passwordHash, String role, String staff, Boolean active) {
         this.username = username;
         this.passwordHash = passwordHash;
         this.role = role;
@@ -24,6 +22,11 @@ public class User {
     public int getId() {
         return id;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
 
     public String getUsername() {
         return username;
@@ -41,29 +44,30 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    public StaffRole getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(StaffRole role) {
+    public void setRole(String role) {
         this.role = role;
     }
 
-    public Staff getStaff() {
+    public String getStaff() {
         return staff;
     }
 
-    public void setStaff(Staff staff) {
+    public void setStaff(String staff) {
         this.staff = staff;
     }
 
-    public boolean isActive() {
+    public Boolean getActive() {
         return active;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(Boolean active) {
         this.active = active;
     }
+    
     
     
 }

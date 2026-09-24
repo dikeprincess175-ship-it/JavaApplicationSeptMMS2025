@@ -15,6 +15,14 @@ public class Ward {
     public Ward(){
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setRooms(List<Room> rooms) {
+        this.rooms = rooms;
+    }
+
     public int getId() {
         return id;
     }

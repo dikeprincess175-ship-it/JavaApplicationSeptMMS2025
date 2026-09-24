@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Patient extends Person {
 
-    private String patientId;
+    private int patientId;
     private String bloodGroup;
     private String genotype;
     private String allergies;
@@ -14,7 +14,7 @@ public class Patient extends Person {
     public Patient() {
     }
 
-    public Patient(String patientId, String bloodGroup, String genotype, String allergies, String emergencyContact, String emergencyPhone, String firstName, String lastName, char gender, LocalDate dateOfBirth, String phone, String email, String street, String city, String Country) {
+    public Patient(int patientId, String bloodGroup, String genotype, String allergies, String emergencyContact, String emergencyPhone, String firstName, String lastName, char gender, LocalDate dateOfBirth, String phone, String email, String street, String city, String Country) {
         super(firstName, lastName, gender, dateOfBirth, phone, email, street, city, Country);
         this.patientId = patientId;
         this.bloodGroup = bloodGroup;
@@ -24,7 +24,11 @@ public class Patient extends Person {
         this.emergencyPhone = emergencyPhone;
     }
 
-    public String getPatientId() {
+    public void setPatientId(int patientId) {
+        this.patientId = patientId;
+    }
+
+    public int getPatientId() {
         return patientId;
     }
 

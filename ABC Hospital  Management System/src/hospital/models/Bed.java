@@ -1,13 +1,17 @@
-
 package hospital.models;
 
 public class Bed {
+
     private int id;
     private String bedNumber;
     private Room room;
     private boolean occupied;
-    
-    public Bed (){
+
+    public Bed() {
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() {
@@ -37,6 +41,5 @@ public class Bed {
     public void setOccupied(boolean occupied) {
         this.occupied = occupied;
     }
-    
-    
+
 }

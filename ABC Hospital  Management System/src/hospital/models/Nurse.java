@@ -13,7 +13,7 @@ public class Nurse extends Staff {
     public Nurse(String firstName, String lastName,
           char gender, LocalDate dateOfBirth, 
           String phone, String email, String street,
-          String city, String Country,String staffId,
+          String city, String Country,int staffId,
           LocalDate employmentDate, double Salary,
           Department department,String nursingLicense,
           String qualification) {

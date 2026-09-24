@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public abstract class Staff extends Person {
 
-    private String staffId;
+    private int staffId;
     private LocalDate employmentDate;
     private double Salary;
     private Department department;
@@ -16,7 +16,7 @@ public abstract class Staff extends Person {
             String lastName, char gender,
             LocalDate dateOfBirth, String phone, String email,
             String street, String city,
-            String Country, String staffId,
+            String Country, int staffId,
             LocalDate employmentDate,
             double Salary, Department department) {
 
@@ -30,7 +30,12 @@ public abstract class Staff extends Person {
         this.department = department;
     }
 
-    public String getStaffId() {
+    public void setStaffId(int staffId) {
+        this.staffId = staffId;
+    }
+
+    
+    public int getStaffId() {
         return staffId;
     }
 

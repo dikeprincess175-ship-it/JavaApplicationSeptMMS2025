@@ -1,24 +1,38 @@
-
 package hospital.models;
 
 import java.time.LocalDate;
 
 public class Treatment {
     private int id;
+    private Patient patient;
     private Doctor doctor;
     private Diagnosis diagnosis;
+    
     private LocalDate treatmentDate;
     private String treatmentName;
     private String description;
     private String notes;
     private String status;
     
-    public Treatment(){
+    public Treatment(){ 
         
     }
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
     }
 
     public Doctor getDoctor() {

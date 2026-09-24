@@ -17,6 +17,10 @@ public class Department {
         this.location = location;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

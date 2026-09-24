@@ -1,9 +1,9 @@
-
 package hospital.models;
 
 import java.time.LocalDateTime;
 
 public class LaboratoryTest {
+
     private int id;
     private Patient patient;
     private LaboratoryTechnician technician;
@@ -12,9 +12,13 @@ public class LaboratoryTest {
     private String result;
     private String referenceRange;
     private String status;
-     
-    public LaboratoryTest(){
-    
+
+    public LaboratoryTest() {
+
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() {
@@ -76,7 +80,5 @@ public class LaboratoryTest {
     public void setStatus(String status) {
         this.status = status;
     }
-    
-    
-    
+
 }

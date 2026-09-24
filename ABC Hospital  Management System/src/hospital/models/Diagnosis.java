@@ -1,20 +1,28 @@
-
 package hospital.models;
+
+import java.time.LocalDate;
 
 public class Diagnosis {
     private int id;
     private Patient patient;
     private Doctor doctor;
+    private LocalDate diagnosisDate;
     private String condition;
     private String description;
     private String notes;
     
-    public Diagnosis(){
+    public Diagnosis(){ 
+        
     }
 
     public int getId() {
         return id;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
 
     public Patient getPatient() {
         return patient;
@@ -30,6 +38,14 @@ public class Diagnosis {
 
     public void setDoctor(Doctor doctor) {
         this.doctor = doctor;
+    }
+
+    public LocalDate getDiagnosisDate() {
+        return diagnosisDate;
+    }
+
+    public void setDiagnosisDate(LocalDate diagnosisDate) {
+        this.diagnosisDate = diagnosisDate;
     }
 
     public String getCondition() {
@@ -55,6 +71,6 @@ public class Diagnosis {
     public void setNotes(String notes) {
         this.notes = notes;
     }
-           
+    
     
 }

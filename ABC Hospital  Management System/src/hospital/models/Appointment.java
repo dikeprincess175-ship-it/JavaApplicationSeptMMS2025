@@ -1,11 +1,9 @@
-
 package hospital.models;
-
 
 import java.time.LocalDateTime;
 
-
 public class Appointment {
+
     private int id;
     private Patient patient;
     private Doctor doctor;
@@ -13,6 +11,10 @@ public class Appointment {
     private String reason;
     private String status;
     private String notes;
+
+    public Appointment() {
+
+    }
 
     public Appointment(int id, Patient patient, Doctor doctor, LocalDateTime appointmentDate, String reason, String status, String notes) {
         this.id = id;
@@ -24,10 +26,13 @@ public class Appointment {
         this.notes = notes;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
-
 
     public Patient getPatient() {
         return patient;
@@ -77,5 +82,4 @@ public class Appointment {
         this.notes = notes;
     }
 
-   
 }

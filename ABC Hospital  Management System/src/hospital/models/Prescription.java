@@ -21,6 +21,10 @@ public class Prescription {
         items.remove(item);
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

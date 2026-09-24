@@ -1,4 +1,3 @@
-
 package hospital.models;
 
 import java.time.LocalDate;
@@ -6,17 +5,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MedicalRecord {
+
     private int id;
     private Patient patient;
     private LocalDate createdDate;
-    
+
     private List<Diagnosis> diagnosis = new ArrayList<>();
     private List<Treatment> treatment = new ArrayList<>();
     private List<LaboratoryTest> aboratoryTest = new ArrayList<>();
     private List<Prescription> prescription = new ArrayList<>();
     private List<Admission> admission = new ArrayList<>();
 
-    public MedicalRecord(){
+    public MedicalRecord() {
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() {
@@ -78,6 +82,5 @@ public class MedicalRecord {
     public void setAdmission(List<Admission> admission) {
         this.admission = admission;
     }
-    
-    
+
 }

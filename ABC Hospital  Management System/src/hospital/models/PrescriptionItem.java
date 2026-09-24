@@ -14,6 +14,10 @@ public class PrescriptionItem {
     public PrescriptionItem(){
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
